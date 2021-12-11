@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddv-aJ-aoa">
-                                <rect key="frame" x="112.5" y="311" width="150" height="45"/>
+                                <rect key="frame" x="112.5" y="428.5" width="150" height="45"/>
                                 <color key="backgroundColor" red="0.1137254902" green="0.62745098040000002" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="6TC-sc-zNd"/>
@@ -36,11 +36,21 @@
                                     <action selector="onLoginButton:" destination="Zr3-d1-fe8" eventType="touchUpInside" id="DAG-97-baw"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Twitter_Logo_Blue" translatesAutoresizingMaskIntoConstraints="NO" id="XFh-8U-fwE">
+                                <rect key="frame" x="112.5" y="258.5" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="c7c-lb-ZMe"/>
+                                    <constraint firstAttribute="width" constant="150" id="lhS-mx-sGv"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="ddv-aJ-aoa" firstAttribute="top" secondItem="XFh-8U-fwE" secondAttribute="bottom" constant="20" id="1aJ-65-wfj"/>
+                            <constraint firstItem="XFh-8U-fwE" firstAttribute="centerX" secondItem="15i-qx-bYT" secondAttribute="centerX" id="880-P3-Qzb"/>
                             <constraint firstItem="ddv-aJ-aoa" firstAttribute="centerX" secondItem="15i-qx-bYT" secondAttribute="centerX" id="IKk-2u-W7t"/>
-                            <constraint firstItem="ddv-aJ-aoa" firstAttribute="centerY" secondItem="15i-qx-bYT" secondAttribute="centerY" id="lib-Qn-NDW"/>
+                            <constraint firstItem="XFh-8U-fwE" firstAttribute="centerY" secondItem="15i-qx-bYT" secondAttribute="centerY" id="oia-mr-48k"/>
+                            <constraint firstItem="XFh-8U-fwE" firstAttribute="centerY" secondItem="15i-qx-bYT" secondAttribute="centerY" constant="10" id="sKE-o4-QKf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KKm-4D-oh1"/>
                     </view>
@@ -148,4 +158,7 @@
             <point key="canvasLocation" x="-6191" y="1979"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Twitter_Logo_Blue" width="400" height="400"/>
+    </resources>
 </document>
