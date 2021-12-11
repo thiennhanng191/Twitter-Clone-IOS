@@ -18,6 +18,8 @@ class HomeTableViewController: UITableViewController {
         TwitterAPICaller.client?.logout();
         
         self.dismiss(animated: true, completion: nil) // dismiss current view (i.e. make it disappear)
+        // set the userLoggedIn state back to false
+        UserDefaults.standard.set(false, forKey: "userLoggedIn")
     }
     // MARK: - Table view data source
 
