@@ -127,10 +127,10 @@
         <!--Navigation Controller-->
         <scene sceneID="b2t-6f-PnX">
             <objects>
-                <navigationController id="oVN-an-Xal" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="oVN-an-Xal" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="mvB-Sy-Aff"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="hGr-8d-Cz8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.1137254902" green="0.62745098040000002" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.1137254902" green="0.62745098040000002" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
