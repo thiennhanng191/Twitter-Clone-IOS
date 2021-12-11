@@ -59,6 +59,10 @@ class HomeTableViewController: UITableViewController {
         let imageUrl = URL(string: (user["profile_image_url_https"] as? String)!)
         let data = try? Data(contentsOf: imageUrl!)
         
+        // set image view to be circular
+        cell.profileImageView.layer.masksToBounds = true
+        cell.profileImageView.layer.cornerRadius = cell.profileImageView.bounds.width / 2
+        
         if let imageData = data {
             cell.profileImageView.image = UIImage(data: imageData)
         }
