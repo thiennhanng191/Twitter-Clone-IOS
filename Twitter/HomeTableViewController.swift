@@ -26,6 +26,11 @@ class HomeTableViewController: UITableViewController {
         // set tableView's refreshControl to myRefreshControl
         tableView.refreshControl = myRefreshControl
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.loadTweets()
+    }
 
     @objc func loadTweets() {
         numberOfTweets = 20
